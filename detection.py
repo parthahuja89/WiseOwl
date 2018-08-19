@@ -22,6 +22,7 @@ def detection(model, image):
 
 
 def plotting(image, predictions):
+
     plt.imshow(image)  #image predicted
     plt.figure()
     order = list(reversed(range(len(predictions))))
@@ -29,7 +30,7 @@ def plotting(image, predictions):
 
     xaxis = []
     for x in predictions:
-        xaxis.append(x[2])
+        xaxis.append(x[2]*100)
 
     yaxis = []
     for y in predictions:
@@ -37,9 +38,9 @@ def plotting(image, predictions):
 
     plt.barh(order, xaxis, alpha=0.5)
     plt.yticks(order, yaxis)
-    plt.xlabel('Precentage Predicted')
-    plt.xlim(0, 1.01)
-    plt.tight_layout()
+    plt.title('Precentage Predicted')
+    plt.xlim(0, 100)
+
     plt.show()
 
 
