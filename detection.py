@@ -12,4 +12,3 @@ image = img_to_array(image)
 def detection(model, image):
     image = np.expand_dims(image , axis = 0) #extra axis?
     image_processed = preprocess_input(image)
-    ymod =
