@@ -1,20 +1,48 @@
 import numpy as np
-from keras.applications.resnet50 import ResNet50, preprocess_input,decode_predictions
+from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
 from keras.preprocessing.image import load_img
 from keras_preprocessing.image import img_to_array
 
-model = ResNet50(weights ='imagenet')
+import matplotlib.pyplot as plt
 
-image = load_img('strawberry.jpg', target_size=(224,224))
+model = ResNet50(weights='imagenet')
+
+image = load_img('strawberry.jpg', target_size=(224, 224))
 image = img_to_array(image)
 
 
 def detection(model, image):
-    image = np.expand_dims(image , axis = 0) #extra axis?
+    image = np.expand_dims(image, axis=0) #fixed the 3D errors
     image_processed = preprocess_input(image)
     predictions = model.predict(image_processed)
     translated = decode_predictions(predictions)
-    translated = translated[0][0]
+    translated = translated[0]
     return translated
 
-print('%s (%.2f%%)' % (detection(model, image)[1], detection(model,image)[2]*100))
+
+
+def plotting(image, predictions):
+    plt.imshow(image)  #image predicted
+    plt.figure()
+    order = list(reversed(range(len(predictions))))
+
+
+    xaxis = []
+    for x in predictions:
+        xaxis.append(x[2])
+
+    yaxis = []
+    for y in predictions:
+        yaxis.append(y[1])
+
+    plt.barh(order, xaxis, alpha=0.5)
+    plt.yticks(order, yaxis)
+    plt.xlabel('Precentage Predicted')
+    plt.xlim(0, 1.01)
+    plt.tight_layout()
+    plt.show()
+
+
+if __name__ == "__main__":
+    predictions = detection(model, image)
+    plots = plotting(image, predictions)
