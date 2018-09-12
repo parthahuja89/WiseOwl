@@ -14,7 +14,7 @@ model = ResNet50(weights='imagenet')
 image = load_img('strawberry.jpg', target_size=(224, 224))
 image = img_to_array(image)
 
-
+#model added
 def detection(model, image):
     image = np.expand_dims(image, axis=0) #fixed the 3D errors
     image_processed = preprocess_input(image)
