@@ -1,3 +1,7 @@
+"""
+CopyRighted under CC license.
+email parthahuj@gmail.com for usage.
+"""
 import numpy as np
 from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
 from keras.preprocessing.image import load_img
