@@ -1,0 +1,45 @@
+#heading{
+    font-family: 'Oswald', sans-serif;
+    align-content: center;
+    text-align: center;
+    font-size: 50px; 
+  }
+  body{
+    background-color:floralwhite;
+    align-content: center;
+    text-align: center;
+    font-size: 15px; 
+  }
+      
+  .card {
+    
+    
+    display:inline-block;
+    margin: 0 30px
+    }
+
+    #branch {
+      background-position: center right; 
+    } 
+
+    .card-container{
+     padding-top: 30px;
+     }
+    .input-group{
+      position: relative;
+      padding-top: 30px;
+      top: 30%;
+      margin: auto;
+      width: 50%; 
+    }
+
+    #tips{
+      padding-top: 10px; 
+      font-size: 30px;
+    }
+    #points{
+      line-height: 1.8;
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+    }
