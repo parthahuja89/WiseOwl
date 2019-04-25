@@ -1,2 +1,3 @@
-/venv
-/Interface/node_modules
+venv
+interface/node_modules/electron/dist/Electron.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+venv/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so
