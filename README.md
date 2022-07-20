@@ -11,7 +11,7 @@ A image recogntion app that uses pre-trained(all images) and re-trained (on eagl
                                    |-- npm run start</br>
 
 # HomeScreen 
-![alt text](https://parthahuja.me/assets/wiseowl/wiseowl_2.png)
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/home_screen.png)
 
 # Testing Image 
 ![alt text](https://parthahuja.me/assets/wiseowl/wiseowl_1.png)
