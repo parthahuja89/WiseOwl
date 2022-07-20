@@ -11,16 +11,18 @@ A image recogntion app that uses pre-trained(all images) and re-trained (on eagl
                                    |-- npm run start</br>
 
 # HomeScreen 
-![alt text](https://parthahuja.me/assets/wiseowl/wiseowl_2.png)
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/home_screen.png)
 
 # Testing Image 
-![alt text](https://parthahuja.me/assets/wiseowl/wiseowl_1.png)
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/owl.jpeg)
 
-# Sample Input 
-![alt text](https://parthahuja.me/assets/wiseowl/wiesowl_4.jpeg)
+# Pre-Trained Output
+#### 90% confidence. 
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/Pre-Trained.png)
 
-# Output Graph @ localhost:500/chart
-![alt text](https://parthahuja.me/assets/wiseowl/wiseowl_3.png)
+# Re-Trained Output
+#### 85% confidence. 
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/Retrained.png)
 
 # More info 
 https://parthahuja.me/wiseowl
