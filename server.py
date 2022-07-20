@@ -11,6 +11,7 @@ yaxis = []
 @app.route('/pre_train', methods=['POST', 'GET'])
 def pretraining():
     if(request.method == 'POST'):
+        print("Executing Pre-Training scripts")
         import detection
         response = request.get_json()
         #extract filename 
@@ -41,6 +42,7 @@ def pretraining():
 @app.route('/re_train', methods=['POST', 'GET'])
 def retraining():
         if(request.method == 'POST'):
+                print("Executing Re-Training scripts")
                 #excute retraining script 
                 response = request.get_json()
                 filename = response.get('value')

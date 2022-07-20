@@ -1,12 +1,8 @@
-"""
-CopyRighted under CC license.
-email parthahuj@gmail.com for usage.
-"""
 import numpy as np
 import sys
 from keras import backend as K
-from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
-from keras.preprocessing.image import load_img
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
+from tensorflow.keras.preprocessing.image import load_img
 from keras_preprocessing.image import img_to_array
 
 import matplotlib.pyplot as plt
