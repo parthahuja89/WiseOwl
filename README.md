@@ -23,6 +23,3 @@ A image recogntion app that uses pre-trained(all images) and re-trained (on eagl
 # Re-Trained Output
 #### 85% confidence. 
 ![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/Retrained.png)
-
-# More info 
-https://parthahuja.me/wiseowl
