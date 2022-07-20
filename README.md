@@ -7,11 +7,11 @@ A image recogntion app that uses pre-trained(all images) and re-trained (on eagl
 4) Run the python server in the /wiseowl-master/ ---  python server.py
 5) Run Electron app in /Inteface/ --</br>
                                    |-- npm install </br>
-                                   |</br>
                                    |-- npm run start</br>
+6) Paste target image in Desktop, and select image through UI.
 
 # HomeScreen 
-![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/home_screen.png)
+![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/homescreen.png)
 
 # Testing Image 
 ![alt text](https://github.com/parthahuja89/WiseOwl/blob/master/test_images/owl.jpeg)
